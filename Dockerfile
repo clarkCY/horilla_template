@@ -14,6 +14,8 @@ RUN git clone https://github.com/horilla-opensource/horilla.git
 
 WORKDIR /horilla
 
+RUN git checkout master
+
 RUN rm -rf .env.dist
 
 RUN echo "DATABASE_URL=$DATABASE_URL" > .env.dist
