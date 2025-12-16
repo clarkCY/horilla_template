@@ -10,7 +10,7 @@ ENV TIME_ZONE=UTC
 
 RUN apt-get update && apt-get install -y libcairo2-dev gcc git
 
-RUN git clone https://github.com/horilla-opensource/horilla.git
+RUN git clone https://github.com/clarkCY/horilla.git
 
 WORKDIR /horilla
 
